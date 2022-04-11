@@ -1,0 +1,135 @@
+.dumi-divider {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 14px;
+  font-variant: tabular-nums;
+  line-height: 1.5715;
+  list-style: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  font-feature-settings: 'tnum';
+}
+.dumi-divider-vertical {
+  position: relative;
+  top: -0.06em;
+  display: inline-block;
+  height: 0.9em;
+  margin: 0 8px;
+  vertical-align: middle;
+  border-top: 0;
+  border-left: 1px solid rgba(0, 0, 0, 0.06);
+}
+.dumi-divider-horizontal {
+  display: flex;
+  clear: both;
+  width: 100%;
+  min-width: 100%;
+  margin: 24px 0;
+}
+.dumi-divider-horizontal.dumi-divider-with-text {
+  display: flex;
+  margin: 16px 0;
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: 500;
+  font-size: 16px;
+  white-space: nowrap;
+  text-align: center;
+  border-top: 0;
+  border-top-color: rgba(0, 0, 0, 0.06);
+}
+.dumi-divider-horizontal.dumi-divider-with-text::before,
+.dumi-divider-horizontal.dumi-divider-with-text::after {
+  position: relative;
+  top: 50%;
+  width: 50%;
+  border-top: 1px solid transparent;
+  border-top-color: inherit;
+  border-bottom: 0;
+  transform: translateY(50%);
+  content: '';
+}
+.dumi-divider-horizontal.dumi-divider-with-text-left::before {
+  top: 50%;
+  width: 5%;
+}
+.dumi-divider-horizontal.dumi-divider-with-text-left::after {
+  top: 50%;
+  width: 95%;
+}
+.dumi-divider-horizontal.dumi-divider-with-text-right::before {
+  top: 50%;
+  width: 95%;
+}
+.dumi-divider-horizontal.dumi-divider-with-text-right::after {
+  top: 50%;
+  width: 5%;
+}
+.dumi-divider-inner-text {
+  display: inline-block;
+  padding: 0 1em;
+}
+.dumi-divider-dashed {
+  background: none;
+  border-color: rgba(0, 0, 0, 0.06);
+  border-style: dashed;
+  border-width: 1px 0 0;
+}
+.dumi-divider-horizontal.dumi-divider-with-text.dumi-divider-dashed {
+  border-top: 0;
+}
+.dumi-divider-horizontal.dumi-divider-with-text.dumi-divider-dashed::before,
+.dumi-divider-horizontal.dumi-divider-with-text.dumi-divider-dashed::after {
+  border-style: dashed none none;
+}
+.dumi-divider-vertical.dumi-divider-dashed {
+  border-width: 0 0 0 1px;
+}
+.dumi-divider-plain.dumi-divider-with-text {
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: normal;
+  font-size: 14px;
+}
+.dumi-divider-rtl {
+  direction: rtl;
+}
+.dumi-divider-rtl.dumi-divider-horizontal.dumi-divider-with-text-left::before {
+  width: 95%;
+}
+.dumi-divider-rtl.dumi-divider-horizontal.dumi-divider-with-text-left::after {
+  width: 5%;
+}
+.dumi-divider-rtl.dumi-divider-horizontal.dumi-divider-with-text-right::before {
+  width: 5%;
+}
+.dumi-divider-rtl.dumi-divider-horizontal.dumi-divider-with-text-right::after {
+  width: 95%;
+}
+
+.dumi-divider-horizontal.dumi-divider-with-text-left.dumi-divider-no-default-orientation-margin-left {
+  &::before {
+    width: 0;
+  }
+
+  &::after {
+    width: 100%;
+  }
+
+  .dumi-divider-inner-text {
+    padding-left: 0;
+  }
+}
+
+.dumi-divider-horizontal.dumi-divider-with-text-right.dumi-divider-no-default-orientation-margin-right {
+  &::before {
+    width: 100%;
+  }
+
+  &::after {
+    width: 0;
+  }
+
+  .dumi-divider-inner-text {
+    padding-right: 0;
+  }
+}
