@@ -113,9 +113,9 @@ export default () => {
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
-| children | 标题 |  |  |
+| children | 标题 | ReactNode | - |
 | orientation | 分割线标题的位置 | `left` \| `right` \| `center` | `center` |
-| orientationMargin | 标题和最近 left/right 边框之间的距离，去除了分割线，同时 `orientation` 必须为 `left` 或 `right` 生效 |
+| orientationMargin | 标题和最近 left/right 边框之间的距离，同时 `orientation` 必须为 `left` 或 `right` 生效 | string \| number | - |
 | dashed | 是否虚线 | boolean |  |
 | plain | 文字是否显示为普通正文样式 | boolean | false |
 | type | 水平还是垂直类型 | `horizontal` \| `vertical` | `horizontal` |
