@@ -1,67 +1,34 @@
 # react-dumi-ui
 
-### Create project
+`react-dumi-ui` 是基于 React 的 UI 组件库，主要用于日常项目开发使用。
+
+## 使用 npm 安装
 
 ```bash
-$ mkdir react-dumi-ui && cd react-dumi-ui
-$ yarn create @umijs/dumi-lib --site
+npm i react-dumi-ui
 ```
 
-Install dependencies：
+## 示例
 
-```bash
-$ yarn
+```tsx
+import { Button, Space } from 'react-dumi-ui';
+
+ReactDOM.render(
+  <>
+    <Button type="primary">Primary Button</Button>
+    <Button type="dashed">Dashed Button</Button>
+    <Button type="text">Text Button</Button>
+    <Button type="link">Link Button</Button>
+  </>,
+  mountNode,
+);
 ```
 
-Start the dev server：
+## 组件链接
 
-```bash
-$ yarn start
-```
+- [Button](http://49.232.221.71:5206/components/button)
+- [Space](http://49.232.221.71:5206/components/space)
 
-Build documentation：
+### 如何创建
 
-```bash
-$ yarn docs:build
-```
-
-Run test：
-
-```bash
-$ yarn test
-```
-
-- If it fails, the package should be missing:
-
-```bash
-$ yarn add react-dom@17.0.1 --dev
-```
-
-Build library via `father-build`：
-
-```bash
-$ yarn build
-```
-
-### 本地访问
-
-> http://localhost:5205
-
-> 若端口号冲突，可在`.env`文件中修改本地端口号，并重启项目
-
-### 自定义导航、分组和标题
-
-```
----
-title: 自定义页面名称
-nav:
-  path: /自定义导航路由
-  title: 自定义导航名称
-  order: 控制导航顺序，数字越小越靠前，默认以路径长度和字典序排序
-
-group:
-  path: /自定义分组路由，注意，分组路由 = 导航路由 + 自己
-  title: 自定义分组名称
-  order: 控制分组顺序，数字越小越靠前，默认以路径长度和字典序排序
----
-```
+[create project](./create.md)，提供大家如何创建一个自己的 UI 组件库。

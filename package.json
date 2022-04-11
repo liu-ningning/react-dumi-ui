@@ -1,6 +1,6 @@
 {
   "name": "react-dumi-ui",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "license": "MIT",
   "author": "ykn",
   "scripts": {
@@ -29,7 +29,7 @@
     "react-dom": "17.0.1",
     "yorkie": "^2.0.0"
   },
-  "homepage": "https://github.com/jshttp/etag#readme",
+  "homepage": "https://github.com/liu-ningning/react-dumi-ui",
   "keywords": [
     "react",
     "react-ui"
