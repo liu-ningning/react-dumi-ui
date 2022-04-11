@@ -2,6 +2,7 @@
 nav:
   title: Components
   path: /components
+  order: 1
 
 group:
   title: Space

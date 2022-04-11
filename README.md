@@ -29,6 +29,10 @@ ReactDOM.render(
 - [Button](http://49.232.221.71:5206/components/button)
 - [Space](http://49.232.221.71:5206/components/space)
 
-### 如何创建
+## 更新日志
 
-[create project](./create.md)，提供大家如何创建一个自己的 UI 组件库。
+- [v1.1.0](http://49.232.221.71:5206/history#110)
+
+## 如何创建
+
+[create project](https://github.com/liu-ningning/react-dumi-ui/blob/main/create.md)，提供大家如何创建一个自己的 UI 组件库。
