@@ -40,3 +40,7 @@ ReactDOM.render(
 ## 如何创建
 
 [create project](https://github.com/liu-ningning/react-dumi-ui/blob/main/create.md)，提供大家如何创建一个自己的 UI 组件库。
+
+## 如何发布一个组件库
+
+[How to publish a UI component library](https://github.com/liu-ningning/react-dumi-ui/blob/main/build.md)
