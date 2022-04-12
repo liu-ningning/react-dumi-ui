@@ -29,9 +29,11 @@ ReactDOM.render(
 - [Button](http://49.232.221.71:5206/components/button)
 - [Space](http://49.232.221.71:5206/components/space)
 - [Divider](http://49.232.221.71:5206/components/divider)
+- [Tag](http://49.232.221.71:5206/components/tag)
 
 ## 更新日志
 
+- [v1.1.2](http://49.232.221.71:5206/history#112)
 - [v1.1.1](http://49.232.221.71:5206/history#111)
 - [v1.1.0](http://49.232.221.71:5206/history#110)
 
