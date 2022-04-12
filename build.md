@@ -37,7 +37,7 @@ $ yarn start
 
 默认启动 `8000` 端口，当然你可以修改你想启动的接口，通过添加`/.env`文件来自定义端口
 
-```json
+```
 PORT=5200
 BROWSER=none
 ESLINT=1
@@ -109,7 +109,9 @@ $ yarn docs:build
 
 > 打包后，将会在目录中生成 `docs-dist` 文件
 
-组件文档运行效果如下所示： ![运行效果截图](/statics/divider.png)
+组件文档运行效果如下所示：
+
+![运行效果截图](/statics/divider.png)
 
 ## 基于 father-build 构建
 
@@ -136,7 +138,7 @@ export default {
 
 2、修改 /package.json
 
-```json
+```
 {
   ...
   "module": "es/index.js",
@@ -173,7 +175,7 @@ npm login --registry https://registry.npmjs.org
 npm publish --registry https://registry.npmjs.org
 ```
 
-- 注意每次发包钱，确定`package.json`中的`version`是否更新，可通过命令设置 npm 包版本
+- 注意每次发包前，确定`package.json`中的`version`是否更新，可通过命令设置 npm 包版本
 
 ```bash
 npm version 1.1.0
@@ -215,3 +217,4 @@ npm unpublish --registry https://registry.npmjs.org xxx@1.1.1 --force
 
 - [react-dumi-ui](https://github.com/liu-ningning/react-dumi-ui)
 - [react-dumi-ui 文档](http://49.232.221.71:5206)
+- [react-dumi-ui npm](https://www.npmjs.com/package/react-dumi-ui)
