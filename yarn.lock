@@ -10566,6 +10566,16 @@ rc-align@^4.0.0:
     rc-util "^5.3.0"
     resize-observer-polyfill "^1.5.1"
 
+rc-dialog@^8.7.0:
+  version "8.7.0"
+  resolved "https://registry.npmmirror.com/rc-dialog/-/rc-dialog-8.7.0.tgz#7741f7aae73b7df3a880ad76b48aab62edbcccc7"
+  integrity sha512-FzHDSdP8UoLw9wh7gME4KyYNu2WFRkGzoqLSYXQlEWcFn5WjEvZfcvImridb3M/ekodst1d4rw7UbsRjTR0Zrw==
+  dependencies:
+    "@babel/runtime" "^7.10.1"
+    classnames "^2.2.6"
+    rc-motion "^2.3.0"
+    rc-util "^5.6.1"
+
 rc-dropdown@~3.4.0:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/rc-dropdown/-/rc-dropdown-3.4.0.tgz#05c9404975890cc0dd8fef5492135485c6426840"
@@ -10593,6 +10603,15 @@ rc-motion@^2.0.0, rc-motion@^2.0.1, rc-motion@^2.4.1, rc-motion@^2.4.3:
   version "2.4.6"
   resolved "https://registry.yarnpkg.com/rc-motion/-/rc-motion-2.4.6.tgz#b9e07391927fb7bc14e62dcd839146958db6b2ef"
   integrity sha512-nXIHve2EDQZ8BFHfgJI3HYMMOZ7HGsolCfA9ozP99/gc1UqpgKys1TYrQWdXa2trff0V3JLhgn2zz+w9VsyktA==
+  dependencies:
+    "@babel/runtime" "^7.11.1"
+    classnames "^2.2.1"
+    rc-util "^5.19.2"
+
+rc-motion@^2.3.0:
+  version "2.4.9"
+  resolved "https://registry.npmmirror.com/rc-motion/-/rc-motion-2.4.9.tgz#fa6e4b044b971845ffb83696e1c4d11b81bf132f"
+  integrity sha512-lrIpBQQ5gIDVedaubnhXuTjC3zpW7HvC/34KyvcHlf6fBjuBlwv45PbonFhmk4Rgu7gLQYrKoMGgFVXqxxyLCw==
   dependencies:
     "@babel/runtime" "^7.11.1"
     classnames "^2.2.1"
@@ -10656,6 +10675,15 @@ rc-util@^5.0.7, rc-util@^5.12.0, rc-util@^5.15.0, rc-util@^5.16.1, rc-util@^5.17
   version "5.19.3"
   resolved "https://registry.yarnpkg.com/rc-util/-/rc-util-5.19.3.tgz#5f6aa854820f6d5824451d80771035b013eaf6d8"
   integrity sha512-S28epi9E2s7Nir05q8Ffl3hzDLwkavTGi0PGH1cTqCmkpG1AeBEuZgQDpksYeU6IgHcds5hWIPE5PUcdFiZl8w==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    react-is "^16.12.0"
+    shallowequal "^1.1.0"
+
+rc-util@^5.6.1:
+  version "5.20.1"
+  resolved "https://registry.npmmirror.com/rc-util/-/rc-util-5.20.1.tgz#323590df56175f60b1a67d2ba76f04c3c2cb84cd"
+  integrity sha512-2IEyErPAYl0Up5gBu71e8IkOs+/SL9XRUvnGhtsr7IHlXLx2OsbQKTDpWacJbzLCmNcgJylDGj1kiklx+zagRA==
   dependencies:
     "@babel/runtime" "^7.12.5"
     react-is "^16.12.0"

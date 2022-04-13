@@ -7,10 +7,11 @@ interface ButtonProps {
   size?: string;
   danger?: boolean;
   disabled?: boolean;
+  onClick?: React.MouseEventHandler<HTMLElement>;
 }
 
 const Button = (Props: ButtonProps) => {
-  const { children, type, size, danger, disabled } = Props;
+  const { children, type, size, danger, disabled, onClick } = Props;
   let className = 'dumi-btn';
 
   // 按钮类型
@@ -25,8 +26,17 @@ const Button = (Props: ButtonProps) => {
   // 危险按钮
   if (danger) className += ` dumi-btn-dangerous`;
 
+  // 点击事件
+  const handleClick = (e: React.MouseEvent<HTMLButtonElement | HTMLAnchorElement, MouseEvent>) => {
+    if (disabled) {
+      e.preventDefault();
+      return;
+    }
+    (onClick as React.MouseEventHandler<HTMLButtonElement | HTMLAnchorElement>)?.(e);
+  };
+
   return (
-    <button disabled={disabled} className={className}>
+    <button disabled={disabled} className={className} onClick={handleClick}>
       <span>{children}</span>
     </button>
   );

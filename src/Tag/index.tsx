@@ -7,6 +7,7 @@ interface TagProps {
   prefixCls?: string;
   className?: string;
   color?: string;
+  onClick?: React.MouseEventHandler<HTMLElement>;
 }
 
 const PresetStatusColorTypes = ['success', 'processing', 'error', 'default', 'warning'];
@@ -29,7 +30,7 @@ const PresetColorRegex = new RegExp(`^(${PresetColorTypes.join('|')})(-inverse)?
 const PresetStatusColorRegex = new RegExp(`^(${PresetStatusColorTypes.join('|')})$`);
 
 const Tag = (Props: TagProps) => {
-  const { children, color } = Props;
+  const { children, color, onClick } = Props;
   const prefixCls = 'dumi-tag';
   const className = prefixCls;
 
@@ -53,10 +54,20 @@ const Tag = (Props: TagProps) => {
 
   const tagStyle = {
     backgroundColor: color && !isPresetColor() ? color : undefined,
+    cursor: onClick ? 'pointer' : 'default',
+  };
+
+  // 点击事件
+  const handleClick = (e: React.MouseEvent<HTMLButtonElement | HTMLAnchorElement, MouseEvent>) => {
+    if (!onClick) {
+      e.preventDefault();
+      return;
+    }
+    (onClick as React.MouseEventHandler<HTMLButtonElement | HTMLAnchorElement>)?.(e);
   };
 
   return (
-    <span className={tagClassName} style={tagStyle}>
+    <span className={tagClassName} style={tagStyle} onClick={handleClick}>
       {children}
     </span>
   );

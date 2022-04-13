@@ -8,10 +8,10 @@
 npm i react-dumi-ui
 ```
 
-## 示例
+## Button 示例
 
 ```tsx
-import { Button, Space } from 'react-dumi-ui';
+import { Button } from 'react-dumi-ui';
 
 ReactDOM.render(
   <>
@@ -24,12 +24,41 @@ ReactDOM.render(
 );
 ```
 
+## Modal 示例
+
+```tsx
+import React, { useState } from 'react';
+import { Button, Modal } from 'react-dumi-ui';
+
+export default () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  return (
+    <>
+      <Button type="primary" onClick={() => setIsVisible(true)}>
+        Open Modal
+      </Button>
+      <Modal
+        title="Basic Modal"
+        visible={isVisible}
+        onOk={() => setIsVisible(false)}
+        onCancel={() => setIsVisible(false)}
+      >
+        <p>1、This is contents...</p>
+        <p>2、This is contents...</p>
+      </Modal>
+    </>
+  );
+};
+```
+
 ## 组件链接
 
 - [Button](http://49.232.221.71:5206/components/button)
 - [Space](http://49.232.221.71:5206/components/space)
 - [Divider](http://49.232.221.71:5206/components/divider)
 - [Tag](http://49.232.221.71:5206/components/tag)
+- [Modal](http://49.232.221.71:5206/components/modal)
 
 ## 更新日志
 
