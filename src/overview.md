@@ -16,6 +16,7 @@ group:
 ### 通用组件
 
 - [Button](/components/button) 按钮
+- [Animation](/components/animation) 动画
 
 ### 布局组件
 

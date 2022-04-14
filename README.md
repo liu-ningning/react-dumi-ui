@@ -59,6 +59,7 @@ export default () => {
 - [Divider](http://49.232.221.71:5206/components/divider)
 - [Tag](http://49.232.221.71:5206/components/tag)
 - [Modal](http://49.232.221.71:5206/components/modal)
+- [Animation](http://49.232.221.71:5206/components/animation)
 
 ## 更新日志
 

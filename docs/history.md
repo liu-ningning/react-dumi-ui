@@ -11,13 +11,15 @@ nav:
 
 `2022-04-14`
 
+- 添加组件 `Animation`
+
 ## 1.1.2
 
 `2022-04-12`
 
 - 添加组件 `Modal`
-- 修复组件 `Button` 不可添加 `onClick` 时间
-- 修复组件 `Tag` 不可添加 `onClick` 时间
+- 修复组件 `Button` 不可添加 `onClick` 事件
+- 修复组件 `Tag` 不可添加 `onClick` 事件
 
 ## 1.1.1
 
