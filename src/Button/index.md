@@ -6,7 +6,7 @@ nav:
 
 group:
   title: 通用
-  order: 0
+  order: 1
 ---
 
 ## Button 按钮

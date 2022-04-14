@@ -6,7 +6,7 @@ nav:
 
 group:
   title: 展示
-  order: 3
+  order: 4
 ---
 
 ## Tag 标签

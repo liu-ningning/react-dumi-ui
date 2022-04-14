@@ -6,7 +6,7 @@ nav:
 
 group:
   title: 布局
-  order: 1
+  order: 2
 ---
 
 ## Space 间距
