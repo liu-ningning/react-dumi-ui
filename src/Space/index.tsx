@@ -3,14 +3,14 @@ import './index.less';
 
 interface SpaceProps {
   children?: string;
-  size?: any;
-  direction?: string;
+  size?: 'small' | 'middle' | 'large';
+  direction?: 'horizontal' | 'vertical';
   wrap?: boolean;
-  align?: string;
+  align?: 'start' | 'center' | 'end' | 'baseline';
 }
 
 const Space = (Props: SpaceProps) => {
-  const { children, size, direction = 'horizontal', wrap = false, align } = Props;
+  const { children, size = 'small', direction = 'horizontal', wrap = false, align } = Props;
   let className = 'dumi-space';
 
   // direction

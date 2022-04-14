@@ -3,8 +3,8 @@ import './index.less';
 
 interface ButtonProps {
   children?: string;
-  type?: string;
-  size?: string;
+  type?: 'default' | 'primary' | 'ghost' | 'dashed' | 'link' | 'text';
+  size?: 'large' | 'small';
   danger?: boolean;
   disabled?: boolean;
   onClick?: React.MouseEventHandler<HTMLElement>;
