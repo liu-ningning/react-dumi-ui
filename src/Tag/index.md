@@ -5,10 +5,11 @@ nav:
   order: 1
 
 group:
-  title: Tag
+  title: 展示
+  order: 3
 ---
 
-## Tag
+## Tag 标签
 
 进行标记和分类的小标签
 

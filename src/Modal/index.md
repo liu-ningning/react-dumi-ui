@@ -5,10 +5,11 @@ nav:
   order: 1
 
 group:
-  title: Modal
+  title: 反馈
+  order: 2
 ---
 
-## Modal
+## Modal 对话框
 
 模态对话框。
 

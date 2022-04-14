@@ -5,10 +5,11 @@ nav:
   order: 1
 
 group:
-  title: Divider
+  title: 布局
+  order: 1
 ---
 
-## Divider
+## Divider 分割线
 
 `分割线`
 

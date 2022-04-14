@@ -5,10 +5,11 @@ nav:
   order: 1
 
 group:
-  title: Button
+  title: 通用
+  order: 0
 ---
 
-## Button
+## Button 按钮
 
 ### 按钮类型
 

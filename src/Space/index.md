@@ -5,10 +5,11 @@ nav:
   order: 1
 
 group:
-  title: Space
+  title: 布局
+  order: 1
 ---
 
-## Space
+## Space 间距
 
 设置组件之间的间距。
 
