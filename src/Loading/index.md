@@ -103,5 +103,5 @@ export default () => {
 | 参数 | 说明                                         | 类型      | 默认值    |
 | ---- | -------------------------------------------- | --------- | --------- |
 | size | 组件大小，可选值为 `small` `default` `large` | string    | `default` |
-| tip  | 当作为包裹元素时，可以自定义描述文案         | ReactNode |           |
+| tip  | 当作为包裹元素时，可以自定义描述文案         | ReactNode | -         |
 | type | 组件类型，可选值为 `spot` `line`             | string    | `spot`    |
