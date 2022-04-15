@@ -11,6 +11,7 @@ npm i react-dumi-ui
 ## Button 示例
 
 ```tsx
+import React, { useState } from 'react';
 import { Button } from 'react-dumi-ui';
 
 ReactDOM.render(
@@ -60,14 +61,11 @@ export default () => {
 - [Tag](http://49.232.221.71:5206/components/tag)
 - [Modal](http://49.232.221.71:5206/components/modal)
 - [Animation](http://49.232.221.71:5206/components/animation)
+- [Loading](http://49.232.221.71:5206/components/loading)
 
 ## 更新日志
 
-- [v1.1.4](http://49.232.221.71:5206/history#114)
-- [v1.1.3](http://49.232.221.71:5206/history#113)
-- [v1.1.2](http://49.232.221.71:5206/history#112)
-- [v1.1.1](http://49.232.221.71:5206/history#111)
-- [v1.1.0](http://49.232.221.71:5206/history#110)
+- [v1.1.5](http://49.232.221.71:5206/history#115)
 
 ## 如何创建
 

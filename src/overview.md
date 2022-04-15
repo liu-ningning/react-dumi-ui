@@ -15,8 +15,8 @@ group:
 
 ### 通用组件
 
-- [Button](/components/button) 按钮
 - [Animation](/components/animation) 动画
+- [Button](/components/button) 按钮
 
 ### 布局组件
 
@@ -25,6 +25,7 @@ group:
 
 ### 反馈组件
 
+- [Loading](/components/loading) 加载中
 - [Modal](/components/modal) 对话框
 
 ### 展示组件

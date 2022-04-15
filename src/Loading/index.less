@@ -1,0 +1,182 @@
+.dumi-loading {
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #1890ff;
+  font-size: 14px;
+  line-height: 1.5715;
+  text-align: center;
+  vertical-align: middle;
+  transition: transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+}
+
+.dumi-loading-spinning {
+  position: static;
+  display: inline-block;
+  opacity: 1;
+}
+
+.dumi-loading-nested-loading {
+  position: relative;
+}
+
+.dumi-loading-nested-loading .dumi-loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-height: 400px;
+}
+
+.dumi-loading-nested-loading .dumi-loading .dumi-loading-dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -10px;
+}
+
+.dumi-loading-nested-loading .dumi-loading .dumi-loading-text {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  padding-top: 5px;
+  text-shadow: 0 1px 2px #fff;
+}
+
+.dumi-loading-nested-loading .dumi-loading.dumi-loading-show-text .dumi-loading-dot {
+  margin-top: -20px;
+}
+
+.dumi-loading-nested-loading .dumi-loading-sm .dumi-loading-dot {
+  margin: -7px;
+}
+
+.dumi-loading-nested-loading .dumi-loading-sm .dumi-loading-text {
+  padding-top: 2px;
+}
+
+.dumi-loading-nested-loading .dumi-loading-sm.dumi-loading-show-text .dumi-loading-dot {
+  margin-top: -17px;
+}
+
+.dumi-loading-nested-loading .dumi-loading-lg .dumi-loading-dot {
+  margin: -16px;
+}
+
+.dumi-loading-nested-loading .dumi-loading-lg .dumi-loading-text {
+  padding-top: 11px;
+}
+
+.dumi-loading-nested-loading .dumi-loading-lg.dumi-loading-show-text .dumi-loading-dot {
+  margin-top: -26px;
+}
+
+.dumi-loading-container {
+  position: relative;
+  opacity: 0.3;
+  transition: opacity 0.3s;
+}
+
+.dumi-loading-container::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  opacity: 0.5;
+  transition: all 0.3s;
+  content: '';
+  pointer-events: none;
+}
+
+.dumi-loading-dot {
+  position: relative;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  font-size: 20px;
+}
+
+.dumi-loading-dot-item {
+  position: absolute;
+  display: block;
+  width: 9px;
+  height: 9px;
+  background-color: #1890ff;
+  border-radius: 100%;
+  transform: scale(0.75);
+  transform-origin: 50% 50%;
+  opacity: 0.3;
+  animation: antSpinMove 1s infinite linear alternate;
+}
+
+.dumi-loading-dot-item:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+
+.dumi-loading-dot-item:nth-child(2) {
+  top: 0;
+  right: 0;
+  animation-delay: 0.4s;
+}
+
+.dumi-loading-dot-item:nth-child(3) {
+  right: 0;
+  bottom: 0;
+  animation-delay: 0.8s;
+}
+
+.dumi-loading-dot-item:nth-child(4) {
+  bottom: 0;
+  left: 0;
+  animation-delay: 1.2s;
+}
+
+.dumi-loading-dot-spin {
+  transform: rotate(45deg);
+  animation: antRotate 1.2s infinite linear;
+}
+
+.dumi-loading-sm .dumi-loading-dot {
+  font-size: 14px;
+}
+
+.dumi-loading-sm .dumi-loading-dot i {
+  width: 6px;
+  height: 6px;
+}
+
+.dumi-loading-lg .dumi-loading-dot {
+  font-size: 32px;
+}
+
+.dumi-loading-lg .dumi-loading-dot i {
+  width: 14px;
+  height: 14px;
+}
+
+.dumi-loading.dumi-loading-show-text .dumi-loading-text {
+  display: block;
+}
+
+@keyframes antSpinMove {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes antRotate {
+  to {
+    transform: rotate(405deg);
+  }
+}

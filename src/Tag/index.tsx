@@ -32,7 +32,6 @@ const PresetStatusColorRegex = new RegExp(`^(${PresetStatusColorTypes.join('|')}
 const Tag = (Props: TagProps) => {
   const { children, color, onClick } = Props;
   const prefixCls = 'dumi-tag';
-  const className = prefixCls;
 
   const isPresetColor = (): boolean => {
     if (!color) {
@@ -43,14 +42,10 @@ const Tag = (Props: TagProps) => {
 
   const presetColor = isPresetColor();
 
-  const tagClassName = classNames(
-    prefixCls,
-    {
-      [`${prefixCls}-${color}`]: presetColor,
-      [`${prefixCls}-has-color`]: color && !presetColor,
-    },
-    className,
-  );
+  const tagClassName = classNames(prefixCls, {
+    [`${prefixCls}-${color}`]: presetColor,
+    [`${prefixCls}-has-color`]: color && !presetColor,
+  });
 
   const tagStyle = {
     backgroundColor: color && !isPresetColor() ? color : undefined,
